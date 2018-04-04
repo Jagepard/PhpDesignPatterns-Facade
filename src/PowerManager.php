@@ -19,6 +19,6 @@ class PowerManager
 
     public function turnPower()
     {
-        return "It's powered \n";
+        return "PC has powered \n";
     }
 }

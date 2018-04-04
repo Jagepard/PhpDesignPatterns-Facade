@@ -19,6 +19,6 @@ class GraphicsProcessingUnit
 
     public function render()
     {
-        return "It's rendered \n";
+        return "GPU has rendered \n";
     }
 }

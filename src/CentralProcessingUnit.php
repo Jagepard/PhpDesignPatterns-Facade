@@ -19,6 +19,6 @@ class CentralProcessingUnit
 
     public function execute()
     {
-        return "It's running \n";
+        return "CPU has running \n";
     }
 }
