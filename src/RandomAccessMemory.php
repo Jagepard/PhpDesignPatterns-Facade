@@ -19,6 +19,6 @@ class RandomAccessMemory
 
     public function load()
     {
-        return "It's loaded \n";
+        return "RAM has loaded \n";
     }
 }

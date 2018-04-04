@@ -51,10 +51,11 @@ class PersonalComputerFacade
 
     public function run()
     {
-        $this->getPowerSwitch()->turnPower();
-        $this->getCentralProcessingUnit()->execute();
-        $this->getRandomAccessMemory()->load();
-        $this->getGraphicsProcessingUnit()->render();
+        return
+            $this->getPowerSwitch()->turnPower() .
+            $this->getCentralProcessingUnit()->execute() .
+            $this->getRandomAccessMemory()->load() .
+            $this->getGraphicsProcessingUnit()->render();
     }
 
     /**
