@@ -7,4 +7,4 @@ require_once 'vendor/autoload.php';
 
 $computer = new PersonalComputerFacade();
 
-$computer->run();
+print $computer->run();
