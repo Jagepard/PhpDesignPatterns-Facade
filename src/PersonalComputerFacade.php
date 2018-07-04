@@ -1,19 +1,14 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 04.04.18
- * Time: 15:07
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Structural\Facade;
 
-/**
- * Class PCFacade
- * @package Structural\Facade
- */
 /**
  * Class PersonalComputerFacade
  * @package Structural\Facade
@@ -26,13 +21,13 @@ class PersonalComputerFacade
      */
     protected $powerSwitch;
     /**
-     * @var CentralProcessingUnit
-     */
-    protected $centralProcessingUnit;
-    /**
      * @var RandomAccessMemory
      */
     protected $randomAccessMemory;
+    /**
+     * @var CentralProcessingUnit
+     */
+    protected $centralProcessingUnit;
     /**
      * @var GraphicsProcessingUnit
      */
@@ -52,41 +47,9 @@ class PersonalComputerFacade
     public function run()
     {
         return
-            $this->getPowerSwitch()->turnPower() .
-            $this->getCentralProcessingUnit()->execute() .
-            $this->getRandomAccessMemory()->load() .
-            $this->getGraphicsProcessingUnit()->render();
-    }
-
-    /**
-     * @return PowerManager
-     */
-    public function getPowerSwitch()
-    {
-        return $this->powerSwitch;
-    }
-
-    /**
-     * @return CentralProcessingUnit
-     */
-    public function getCentralProcessingUnit()
-    {
-        return $this->centralProcessingUnit;
-    }
-
-    /**
-     * @return RandomAccessMemory
-     */
-    public function getRandomAccessMemory()
-    {
-        return $this->randomAccessMemory;
-    }
-
-    /**
-     * @return GraphicsProcessingUnit
-     */
-    public function getGraphicsProcessingUnit()
-    {
-        return $this->graphicsProcessingUnit;
+            $this->powerSwitch->turnPower() .
+            $this->centralProcessingUnit->execute() .
+            $this->randomAccessMemory->load() .
+            $this->graphicsProcessingUnit->render();
     }
 }

@@ -1,11 +1,10 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 04.04.18
- * Time: 14:28
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Structural\Facade;
@@ -19,6 +18,6 @@ class PowerManager
 
     public function turnPower()
     {
-        return "PC has powered \n";
+        return "PC run\n";
     }
 }

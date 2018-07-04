@@ -1,11 +1,10 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 04.04.18
- * Time: 14:32
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Structural\Facade;
@@ -19,6 +18,6 @@ class CentralProcessingUnit
 
     public function execute()
     {
-        return "CPU has running \n";
+        return "CPU run\n";
     }
 }
