@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Facade
+# Facade | [API](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/docs.md "Documentation API")
 Фасад
