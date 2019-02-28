@@ -14,7 +14,6 @@ namespace Structural\Facade;
  */
 class RandomAccessMemory
 {
-
     public function load()
     {
         return "RAM run\n";

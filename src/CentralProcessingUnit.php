@@ -15,7 +15,6 @@ namespace Structural\Facade;
  */
 class CentralProcessingUnit
 {
-
     public function execute()
     {
         return "CPU run\n";

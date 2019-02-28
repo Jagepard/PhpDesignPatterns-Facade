@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Structural\Facade\Tests;
 
-use Structural\Facade\PersonalComputerFacade;
+use Structural\Facade\ComputerFacade;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 /**
@@ -17,19 +17,26 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class FacadeTest extends PHPUnit_Framework_TestCase
 {
-
     /**
-     * @var PersonalComputerFacade
+     * @var ComputerFacade
      */
-    protected $computer;
+    private $computer;
 
     protected function setUp(): void
     {
-        $this->computer = new PersonalComputerFacade();
+        $this->computer = new ComputerFacade();
     }
 
     public function testPersonalComputerFacade()
     {
-        $this->assertEquals("PC run\nCPU run\nRAM run\nGPU run\n", $this->computer->run());
+        $this->assertEquals("PC run\nCPU run\nRAM run\nGPU run\n", $this->getComputer()->run());
+    }
+
+    /**
+     * @return ComputerFacade
+     */
+    public function getComputer(): ComputerFacade
+    {
+        return $this->computer;
     }
 }

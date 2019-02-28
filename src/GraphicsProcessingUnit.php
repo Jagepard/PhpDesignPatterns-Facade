@@ -15,7 +15,6 @@ namespace Structural\Facade;
  */
 class GraphicsProcessingUnit
 {
-
     public function render()
     {
         return "GPU run\n";
