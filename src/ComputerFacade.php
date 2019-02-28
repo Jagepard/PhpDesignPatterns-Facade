@@ -13,25 +13,24 @@ namespace Structural\Facade;
  * Class PersonalComputerFacade
  * @package Structural\Facade
  */
-class PersonalComputerFacade
+class ComputerFacade
 {
-
     /**
      * @var PowerManager
      */
-    protected $powerSwitch;
+    private $powerSwitch;
     /**
      * @var RandomAccessMemory
      */
-    protected $randomAccessMemory;
+    private $randomAccessMemory;
     /**
      * @var CentralProcessingUnit
      */
-    protected $centralProcessingUnit;
+    private $centralProcessingUnit;
     /**
      * @var GraphicsProcessingUnit
      */
-    protected $graphicsProcessingUnit;
+    private $graphicsProcessingUnit;
 
     /**
      * PersonalComputerFacade constructor.

@@ -15,7 +15,6 @@ namespace Structural\Facade;
  */
 class PowerManager
 {
-
     public function turnPower()
     {
         return "PC run\n";
