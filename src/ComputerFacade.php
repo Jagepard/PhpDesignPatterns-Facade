@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Facade;
 
-/**
- * Class PersonalComputerFacade
- * @package Structural\Facade
- */
 class ComputerFacade
 {
     /**
