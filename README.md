@@ -6,6 +6,8 @@
 -----
 
 # Facade | [API](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Фасад
 
 ![Facade](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/UML.png)
