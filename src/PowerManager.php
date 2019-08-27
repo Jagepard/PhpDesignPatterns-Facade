@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Facade;
 
-/**
- * Class PowerManager
- * @package Structural\Facade
- */
 class PowerManager
 {
     public function turnPower()

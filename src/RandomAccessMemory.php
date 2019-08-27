@@ -8,10 +8,6 @@ declare(strict_types=1);
  */
 namespace Structural\Facade;
 
-/**
- * Class RAM
- * @package Structural\Facade
- */
 class RandomAccessMemory
 {
     public function load()

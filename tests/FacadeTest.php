@@ -12,9 +12,6 @@ namespace Structural\Facade\Tests;
 use Structural\Facade\ComputerFacade;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class FacadeTest
- */
 class FacadeTest extends PHPUnit_Framework_TestCase
 {
     /**

@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Facade;
 
-/**
- * Class GPU
- * @package Structural\Facade
- */
 class GraphicsProcessingUnit
 {
     public function render()
