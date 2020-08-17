@@ -11,7 +11,7 @@
 
 ## Result:
 ```
-PC run
+Power on
 CPU run
 RAM run
 GPU run
