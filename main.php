@@ -1,9 +1,8 @@
-#! usr/bin/env php
 <?php
 
 namespace Structural\Facade;
 
-require_once 'vendor/autoload.php';
+require_once "vendor/autoload.php";
 
 $computer = new ComputerFacade();
 
