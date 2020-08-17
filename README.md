@@ -6,6 +6,13 @@
 -----
 
 # Facade | [API](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/docs.md "Documentation API")
-Фасад
 
-![Facade](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/UML.png)
+```php main.php``` execute in terminal
+
+## Result:
+```
+PC run
+CPU run
+RAM run
+GPU run
+```
