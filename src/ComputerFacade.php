@@ -3,34 +3,19 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Facade;
 
 class ComputerFacade
 {
-    /**
-     * @var PowerManager
-     */
-    private $powerSwitch;
-    /**
-     * @var RandomAccessMemory
-     */
-    private $randomAccessMemory;
-    /**
-     * @var CentralProcessingUnit
-     */
-    private $centralProcessingUnit;
-    /**
-     * @var GraphicsProcessingUnit
-     */
-    private $graphicsProcessingUnit;
+    private PowerManager $powerSwitch;
+    private RandomAccessMemory $randomAccessMemory;
+    private CentralProcessingUnit $centralProcessingUnit;
+    private GraphicsProcessingUnit $graphicsProcessingUnit;
 
-    /**
-     * PersonalComputerFacade constructor.
-     */
     public function __construct()
     {
         $this->powerSwitch            = new PowerManager();
