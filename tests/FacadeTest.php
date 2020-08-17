@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Facade\Tests;
@@ -14,10 +14,7 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class FacadeTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var ComputerFacade
-     */
-    private $computer;
+    private ComputerFacade $computer;
 
     protected function setUp(): void
     {
@@ -26,14 +23,6 @@ class FacadeTest extends PHPUnit_Framework_TestCase
 
     public function testPersonalComputerFacade()
     {
-        $this->assertEquals("PC run\nCPU run\nRAM run\nGPU run\n", $this->getComputer()->run());
-    }
-
-    /**
-     * @return ComputerFacade
-     */
-    public function getComputer(): ComputerFacade
-    {
-        return $this->computer;
+        $this->assertEquals("Power on\nCPU run\nRAM run\nGPU run\n", $this->computer->run());
     }
 }

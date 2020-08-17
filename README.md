@@ -6,8 +6,13 @@
 -----
 
 # Facade | [API](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
 
-Фасад
+```php main.php``` execute in terminal
 
-![Facade](https://github.com/Jagepard/PhpDesignPatterns-Facade/blob/master/UML.png)
+## Result:
+```
+Power on
+CPU run
+RAM run
+GPU run
+```
