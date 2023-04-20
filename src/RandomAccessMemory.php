@@ -11,6 +11,13 @@ namespace Structural\Facade;
 
 class RandomAccessMemory
 {
+    /**
+     * Loads RAM
+     * ---------
+     * Загружает память
+     *
+     * @return void
+     */
     public function load()
     {
         return "RAM run\n";

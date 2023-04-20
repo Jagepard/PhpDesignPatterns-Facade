@@ -11,6 +11,13 @@ namespace Structural\Facade;
 
 class PowerManager
 {
+    /**
+     * Power on
+     * --------
+     * Включает питание
+     *
+     * @return void
+     */
     public function turnPower()
     {
         return "Power on\n";

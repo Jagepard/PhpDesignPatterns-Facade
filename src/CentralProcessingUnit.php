@@ -11,6 +11,13 @@ namespace Structural\Facade;
 
 class CentralProcessingUnit
 {
+    /**
+     * Starts the CPU
+     * --------------
+     * Запускает процессор
+     *
+     * @return void
+     */
     public function execute()
     {
         return "CPU run\n";
