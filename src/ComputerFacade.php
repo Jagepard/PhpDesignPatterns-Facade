@@ -16,6 +16,11 @@ class ComputerFacade
     private CentralProcessingUnit $centralProcessingUnit;
     private GraphicsProcessingUnit $graphicsProcessingUnit;
 
+    /**
+     * Prepares the components
+     * -----------------------
+     * Подготавливает компоненты
+     */
     public function __construct()
     {
         $this->powerSwitch            = new PowerManager();
@@ -24,6 +29,13 @@ class ComputerFacade
         $this->graphicsProcessingUnit = new GraphicsProcessingUnit();
     }
 
+    /**
+     * Starts the computer
+     * -------------------
+     * Запускает компьютер
+     *
+     * @return void
+     */
     public function run()
     {
         return
