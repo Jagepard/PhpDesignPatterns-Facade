@@ -11,23 +11,17 @@ namespace Structural\Facade;
 
 class ComputerFacade
 {
-    private PowerManager $powerSwitch;
-    private RandomAccessMemory $randomAccessMemory;
-    private CentralProcessingUnit $centralProcessingUnit;
-    private GraphicsProcessingUnit $graphicsProcessingUnit;
-
     /**
      * Prepares the components
      * -----------------------
      * Подготавливает компоненты
      */
-    public function __construct()
-    {
-        $this->powerSwitch            = new PowerManager();
-        $this->centralProcessingUnit  = new CentralProcessingUnit();
-        $this->randomAccessMemory     = new RandomAccessMemory();
-        $this->graphicsProcessingUnit = new GraphicsProcessingUnit();
-    }
+    public function __construct(
+        private PowerManager $powerSwitch                      = new PowerManager(), 
+        private RandomAccessMemory $randomAccessMemory         = new RandomAccessMemory(),
+        private CentralProcessingUnit $centralProcessingUnit   = new CentralProcessingUnit(),
+        private GraphicsProcessingUnit $graphicsProcessingUnit = new GraphicsProcessingUnit()
+    ){}
 
     /**
      * Starts the computer
